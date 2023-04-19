@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .banner{
+            width: 740px;
+            height: 120px;
+            background-color: burlywood;
+            float: left;
+        
+        }
+        .login{
+            width: 333px;
+            height: 120px;
+            background-color: black;
+            float: left;
+            margin-left: 8px;
+        }
+        /*로그인 박스를 기준으로 간격을 주기 위해 바깥쪽 여백을 지정. 배너 박스 기준 바깥 여백은 margin-right*/
+        .main{
+            width: 1081px; /*배너 박스와 로그인 박스 더한 값*/
+            height: 120px; /*두개 박스의 고정 높이*/
+            margin: 0 auto;
+        }
+        /* margin값이 2개일때 top bottom,left right로 지정*/
+                /* blok 속서을 가진 박스의 넓이가 지정되어 있을 때 margin:0 auto를 통한 가운데 배치가 가증하며 margin:auto auto라고 입력하면 
+                브라우저 위아래는 자동으로 인식되지 않고 좌우는 자도으로 가운데 배치가능*/
+    </style>
+</head>
+<body>
+    <!-- left right 박스들을 묶은 중첩박스 -->
+    <div class="main"> 
+    <div class="banner" >배너</div>
+    <div class="로그인">로그인</div>
+    </div>
+</body>
+</html>
