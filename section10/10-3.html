@@ -13,8 +13,14 @@
         body{
             background-image:url(art.jpg);
             background-size: 100%;
+            /* background-size:100% 500px;는 최악의 설정 */
+            /* 배경이미지의 사이즈100%는 브라우저의 가로 길이를 기준으로 100%*/
             background-repeat: no-repeat ;
         }
+        /* vh는 웹크기가 변화되면 이미지크기도 맞춰서 변화됨 (반응형) */
+        /* vW는 잘 사용하지 않음 */
+        /* background-img , background-size , background-position */
+        /* cover: 커버한다 덮다 / 빈칸이 안보이게 배경을 꽉 채워주는 것 */
     </style>
 </head>
 <body>

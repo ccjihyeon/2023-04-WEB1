@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko"></html>
+<style>
+    *{
+        margin: 0 auto;
+    }
+
+    header{
+        width: 1000px;
+        height: 100px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        /* overflow: hidden; */
+    }
+     header h1{
+        width: 200px;
+        height: 100%;
+        line-height: 100PX;
+        background-color: bisque;
+        text-align: center;
+        float: left;
+     }
+
+
+     header nav ul{
+        overflow: hidden;
+    }
+
+     header nav ul>li{
+        float: right;
+        background-color: beige;
+        text-align: right
+        
+     }           
+     
+     .top-menu{
+        margin-top: 20px;
+        margin-bottom: 20px;
+     }
+     section{
+        float: left;
+        margin-top: 10px;
+        width: 692px;
+        overflow: hidden;
+        box-sizing: border-box;
+     }
+    #main{
+        margin-top: 10px;
+        width: 1000px;
+        overflow: hidden;
+        box-sizing: border-box;        
+     }
+     article{
+        margin-bottom: 10px;
+        border: 1px solid black;
+    }
+    h2{
+        margin: 10px;
+        height: 100%; 
+        box-sizing: border-box;
+        background-color: palevioletred;
+    }
+    p{
+        margin: 10px;
+    }
+    aside{
+        width: 296px;
+        height: 0 auto;
+        margin-top: 10px;
+        float: right;
+        border: 1px solid black;
+    }
+    footer{
+        clear: both;
+    }
+    label{
+        margin: 6px;
+    }
+    input{
+        margin-right: 6px;
+    }
+
+       
+</style>
+<body>
+    <header>
+        <h1>wep-logo</h1>
+
+        <nav>
+            <ul class="top-menu">
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+            </ul>
+
+            <ul>
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- 본문을 감싸주는 박스는 일단 선택자 박스로 지정  -->
+    <div id="main">
+        <!-- 왼쪽 section(시멘틱 태그) -->
+        <section>
+            <article>
+                <h2>main article</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Eligendi minus magni, aliquid inventore impedit eum architecto officiis? Aut consequatur amet,
+                    eum soluta ad sint obcaecati officia dignissimos quos animi molestiae!
+                </p>
+            </article>
+           
+            <article>
+                <h2>main article</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Eligendi minus magni, aliquid inventore impedit eum architecto officiis? Aut consequatur amet,
+                    eum soluta ad sint obcaecati officia dignissimos quos animi molestiae!
+                </p>
+            </article>
+            <article>
+                <h2>main article</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Eligendi minus magni, aliquid inventore impedit eum architecto officiis? Aut consequatur amet,
+                    eum soluta ad sint obcaecati officia dignissimos quos animi molestiae!
+                </p>
+            </section>
+                <aside>
+                    <h2>Right aside</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, 
+                        tempore perferendis rerum ullam hic laboriosam pariatur 
+                        optio eius similique amet consequuntur molestiae nisi quo a repellat in ex porro repudiandae.
+                    </p>
+                    <label for="emil">mail</label>
+                    <input type="emil">
+                    <button>mailto</button>
+                    <div class="bannekbox">
+                        <h2>text</h2>
+                        <p>banner</p>
+                    </div>
+                </aside>
+    </div>
+    <footer>
+        <p>html5 copyright</p>
+    </footer>
+</body>
+</html>
