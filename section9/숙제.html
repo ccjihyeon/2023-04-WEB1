@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 전체 마진과 패딩 사이즈 설정 */
+        li {
+            list-style-type: none;
+        }
+        /* 리스트 텍스트 앞에 아무런 스타일도 주지않음 */
+        body {
+            background: white;
+        }
+        /* 웹 배경 컬러 */
+        #footer-nav {
+            padding: 0 16px;
+        }
+        /* 앞쪽 여백설정 */
+        .outter-list {
+            border-bottom: 1px solid rgb(231, 86, 110);
+            padding: 8px 0;
+        }
+        .outter-list>label {
+            display: block;
+            width: 100%;
+            padding: 4px 0;
+            font-weight: bold;
+        }
+        .outter-list>input {
+            display: none;
+        }
+        /* outter-list: 바깥쪽 ul의li */
+        .outter-list>input:checked+.inner-list-contaianer {
+            height: 0px;
+            overflow: hidden;
+        }
+        .inner-list>a {
+            display: block;
+            padding: 4px;
+            color: pink;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .outter-list{
+            color: hotpink;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 기준을 section으로 묶어주면 편리함 -->
+    <section id="footer-nav">
+
+    <!-- input안에 checked를 입력해 넣어주면 닫혀있는 checkbox를 설정 할 수 있음 -->
+        <ul class="outter-list-container">
+            <li class="outter-list">
+                <label for="shopping">쇼핑 및 알아보기</label>
+                <input type="checkbox" name="" id="shopping" checked>
+                <ul class="inner-list-contaianer">
+            <li class="inner-list">
+             <a href="#">Mac</a>
+            </li>
+            <li class="inner-list">
+                <a href="#">iPone</a>
+            </li>
+            <li class="inner-list">
+                <a href="#">iPad</a>
+            </li>
+            <li class="inner-list">
+                <a href="#">watch</a>
+            </li>
+             </ul>
+</li>
+        <li class="outter-list">
+            <label for="wallat">애플 지갑</label>
+            <input type="checkbox" name="" id="wallat"checked>
+            <ul class="inner-list-contaianer">
+                <li class="inner-list">
+                    <a href="#">지갑</a>
+                </li>
+                <li class="inner-list">
+                    <a href="#">애플페이</a>
+                </li>
+                <li class="inner-list">
+                    <a href="#">애플 지갑</a>
+                </li>
+            </ul>
+        </li>
+        </ul>
+</section>
+    
+</body>
+</html>
