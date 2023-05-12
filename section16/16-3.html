@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .solar-system{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(72, 72, 114);
+        
+    }
+
+
+    .sun{
+       width: 200px;
+       height: 200px;
+       background-color: rgb(179, 20, 20);
+       border-radius: 50%;
+       
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       
+    }
+    .earth{
+        width: 100px;
+       height: 100px;
+       background-color: greenyellow;
+       border-radius: 50%;
+       
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, calc(-50% - 200px)) rotate(180deg);
+       transform-origin: 50% 250px;
+       animation: earth-ani 5s infinite linear;
+    }
+
+    @keyframes earth-ani{
+        from{
+            transform: translate(-50%, calc(-50% - 200px)) rotate(0deg);
+        }
+        to {
+            transform: translate(-50%, calc(-50% - 200px)) rotate(360deg);
+
+        }
+    }
+    .moon{
+        width: 50px;
+        height: 50px;
+        background-color: gray;
+        border-radius: 58%;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+
+
+
+</style>
+<body>
+   <div class="solar-system">
+        <div class="sun"></div>
+        <div class="earth"></div>
+        <div class="moon"></div>
+    </div>
+</body>
+</html>
