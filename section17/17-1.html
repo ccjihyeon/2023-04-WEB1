@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background-color: green;
+        transition: 0.5s;
+        transition-timing-function: ease;
+        /* 가속도 지정 */
+    }
+    /* 클래스 박스에 마우스를 커서를 올렸을 때 반응하는 값 */
+    .box:hover{
+        width: 400px;
+        height: 400px;
+    }
+    /* 클래스 박스를 클릭했을 때 반응하는 값 */
+    .box:active{
+        background-color: aqua;
+    }
+    /* transition = 특정행동을 지정하여 애니메이션 설정 속성 (변환속성) */
+    
+</style>
+
+<body>
+    <div class="box"></div>
+    
+    
+</body>
+</html>

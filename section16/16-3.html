@@ -12,8 +12,9 @@
         width: 100%;
         height: 100vh;
         background-color: rgb(72, 72, 114);
-        
+        position: relative; 
     }
+
 
 
     .sun{
@@ -41,6 +42,13 @@
        transform-origin: 50% 250px;
        animation: earth-ani 5s infinite linear;
     }
+    .earth-system{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% calc(-50% - 100px)) rotate(35deg);
+        transform-origin: 50% calc(100px + 50%);
+    }
 
     @keyframes earth-ani{
         from{
@@ -60,8 +68,21 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50% calc(-50% - 100px)) rotate(35deg);
+        transform-origin: 50% calc(100px + 50%);
+        animation: moon-ani 3s infinite linear
     }
+    
+    @keyframes moon-ani{
+        from{
+            transform: translate(-50%, calc(-50% - 200px)) rotate(0deg);
+        }
+        to {
+            transform: translate(-50%, calc(-50% - 200px )) rotate(180deg);
+
+        }
+    }
+    
     
 
 
@@ -69,9 +90,10 @@
 </style>
 <body>
    <div class="solar-system">
-        <div class="sun"></div>
-        <div class="earth"></div>
-        <div class="moon"></div>
+        <div class="sun star"></div>
+        <div class="earth-system"></div>
+        <div class="earth star"></div>
+        <div class="moon star"></div>
     </div>
 </body>
 </html>
