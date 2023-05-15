@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #ebebeb;
+    }
+
+    .content {
+        width: 50%;
+        height: 400px;
+        border-radius: 4px;
+        background-color: white;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .image-container {
+        height: 200px;
+        background-color: #cdcdcd;
+        position: relative;
+        background-image: url(광안대교.jpg);
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        /* html에 이미지를 삽입하지 않고 css로 백그라운드 이미지 설정 */
+
+    }
+
+    .plus-button {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-color: #000000;
+        opacity: 0.5;
+        border-radius: 50%;
+        /* 버튼 라운드 설정 */
+        position: absolute;
+        /* 위치 고정 (부모나 조상에 포지션이 지정되어 있지 않으면 적용안됨) */
+        bottom: 8px;
+        right: 8px;
+    }
+    .plus-button>span {
+        display: block;
+        width: 12px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .plus-button>span:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+</style>
+
+<body>
+    <div class="content">
+        <div class="image-container">
+            <a href="#" class="plus-button">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+            <h2>부산 광안대교의 일몰 </h2> <br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum beatae optio ratione, 
+                quibusdam atque ipsum nulla suscipit tempore? Harum aliquam eius sint rem perferendis vitae ratione alias sequi aliquid hic?
+            </p>
+    </div>
+    
+</body>
+</html>
