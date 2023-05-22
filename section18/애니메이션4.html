@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="keyframes">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body{
+    background-color: gray;
+}
+
+    .container{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid transparent;
+    }
+    .container>div{
+        background-color: plum;
+        position: absolute;
+        border: 1px solid transparent;
+
+    }
+    /* 위치랑 상관없이 상속관계가 존재하면 상속관계 설정이 먼저 적용됨  */
+
+    .h-1{
+        width: 31.6px;
+        height: 201.6px;
+
+        animation: h1 5s infinite 0s;
+        transform-origin: top;
+        transform:scaleX(0);
+
+    }
+
+    .h-2{
+        width: 133px;
+        height: 28px;
+        top: 82px;
+        
+        animation: h2 5s infinite 0s;
+        transform-origin: left;
+        transform:scaleX(0);
+
+        
+    }
+
+    .h-3{
+        width: 31.6px;
+        height: 201.6px;
+        position: absolute;
+        left: 118%;
+        bottom: -103%;
+        
+        animation: h3 5s infinite 0s;
+        transform-origin: top;
+        transform:scaleY(0);
+    }
+
+    @keyframes h1{
+        0%{
+        
+            transform: scaleY(0);
+        }
+        20%{
+            
+            transform: scaleX(1);
+
+        }
+        100%{
+            
+            transform: scaleX(1);
+
+        }
+    }
+
+    @keyframes h2{
+        20%{
+            transform: scaleX(0);
+        }
+        40%{
+           
+            transform: scaleX(1);
+        } 
+        100%{
+            transform: scaleX(1);
+        }
+    }
+
+    @keyframes h3{
+        40%{
+            transform:scaleY(0);
+        }
+        60%{
+            transform:scaleY(1);
+        }
+        100%{
+            transform:scaleY(1);
+
+        }
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="h-1"></div>
+        <div class="h-2"></div>
+        <div class="h-3"></div>
+    </div>
+</body>
+</html>

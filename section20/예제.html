@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+<style>
+    header{
+        background-color: peachpuff;
+        padding: 0 32px;
+    }
+    a {
+            color: white;
+            text-decoration: none;
+        }
+    a:hover{
+            color: plum;
+    }    
+    h1{
+        padding: 20px;
+    }
+    .header-container{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
+    .header-nav{
+        display: flex;
+    }
+    .header-icon-container{
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        gap: 10px;
+    }
+    .header-nav-list>a {
+            display: block;
+            padding: 20px;
+        }
+        .ham {
+            display: none;
+        }
+        .main{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: papayawhip;
+        }
+        article{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; 
+        }
+        img{
+            width: 100%;
+            height: 300px;
+        }
+
+        
+    
+        p{
+            width: 100%;
+            height: 300px;
+            text-align: center; 
+        }
+        footer{
+            width: 100%;
+            list-style: none;
+            
+            display: flex;
+            justify-content: space-evenly;
+            background-color: plum;
+            font-size: small;
+            gap: 10px;
+        }
+
+        @media screen and (max-width:1400px) {
+            header {
+                padding: 0 16px;
+            }
+            nav {
+                display:none;
+            }
+            .ham {
+                display:block;
+            }
+            article{
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width:767px){
+            header {
+                padding: 0 16px;
+            }
+        
+
+        }
+
+
+</style>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>로고</h1>
+            <nav>
+                <ul class="header-nav">
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                </ul>
+            </nav>
+            <div class="header-icon-container">
+                <a href="#">아이콘</a>
+                <a href="#">아이콘</a>
+                <button class="ham">메뉴</button>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <article>
+            <img src="#" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Architecto cum delectus ratione numquam soluta reprehenderit corrupti, 
+            consectetur quae,
+            facere fugit earum perferendis quod. 
+            Iure nihil, illum culpa exercitationem sapiente excepturi.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Ipsa omnis at ullam, 
+           itaque nisi earum sunt soluta, consequatur ducimus ad perferendis laudantium, numquam libero.
+            Quaerat assumenda quos ab harum numquam.</p>
+        </article>
+    </section>
+    <footer>
+        <li>푸터 메뉴</li>
+        <li>푸터 메뉴</li>
+        <li>푸터 메뉴</li>
+        <li>푸터 메뉴</li>
+    </footer>
+</body>
+</html>
