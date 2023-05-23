@@ -9,7 +9,7 @@
 </head>
 <style>
     header{
-        background-color: peachpuff;
+        background-color: rgb(250, 216, 222);
         padding: 0 32px;
     }
     a {
@@ -17,7 +17,7 @@
             text-decoration: none;
         }
     a:hover{
-            color: plum;
+            color: rgb(53, 53, 66);
     }    
     h1{
         padding: 20px;
@@ -46,13 +46,28 @@
             display: none;
         }
         .main{
-            max-width: 1200px;
+          
             margin: 0 auto;
-            padding: 20px;
+            padding: 20px;  
+            background-color: rgb(253, 215, 222);
+        }
+        #main-1{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: papayawhip;
+        }
+        #main-2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #intro-banner{
+            width: 100%;
+            
+        }
+        #intro-banner>img{
+            height: 768px;
+            object-fit: cover;
         }
         article{
             display: flex;
@@ -63,24 +78,38 @@
             width: 100%;
             height: 300px;
         }
-
-        
-    
         p{
             width: 100%;
             height: 300px;
             text-align: center; 
         }
-        footer{
+        h2{
+            margin-bottom: 40px;
             width: 100%;
-            list-style: none;
-            
+            height: 20px;
+            background-color: pink;
             display: flex;
             justify-content: space-evenly;
-            background-color: plum;
-            font-size: small;
-            gap: 10px;
         }
+        footer{
+            width: 100%;
+            height: 50px;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: rgb(248, 172, 186);
+            font-size: small;
+            
+        }
+        footer ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        footer p{
+            padding-top: 5px;
+            height: 10px;
+            color: palevioletred;
+        }
+      
 
         @media screen and (max-width:1400px) {
             header {
@@ -90,7 +119,13 @@
                 display:none;
             }
             .ham {
-                display:block;
+                display: block;
+                background-color:rgb(247, 204, 211);
+                border: 1px solid transparent;
+                color: white;
+            }
+            .ham:hover{
+                background-color:pink;
             }
             article{
                 flex-direction: column;
@@ -100,8 +135,6 @@
             header {
                 padding: 0 16px;
             }
-        
-
         }
 
 
@@ -127,9 +160,14 @@
             </div>
         </div>
     </header>
+    <section id="intro-banner">
+    <img src="851f7d18fc9bd0cc80aa0326bbbe43b6.jpg" alt="">
+    </section>
     <section class="main">
+    <main id="main-1">
         <article>
             <img src="#" alt="">
+            <div class="main-content"><h2>제목</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Architecto cum delectus ratione numquam soluta reprehenderit corrupti, 
             consectetur quae,
@@ -139,13 +177,39 @@
            Ipsa omnis at ullam, 
            itaque nisi earum sunt soluta, consequatur ducimus ad perferendis laudantium, numquam libero.
             Quaerat assumenda quos ab harum numquam.</p>
+             </div>
         </article>
-    </section>
+    </main>
+
+    <main id="main-2">
+        <article>
+            <img src="#" alt="">
+            <div class="main-content">
+            <h2>제목</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Architecto cum delectus ratione numquam soluta reprehenderit corrupti, 
+            consectetur quae,
+            facere fugit earum perferendis quod. 
+            Iure nihil, illum culpa exercitationem sapiente excepturi.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Ipsa omnis at ullam, 
+           itaque nisi earum sunt soluta, consequatur ducimus ad perferendis laudantium, numquam libero.
+            Quaerat assumenda quos ab harum numquam.</p>
+        </div>
+        </article>
+    </main>
+</section>
     <footer>
-        <li>푸터 메뉴</li>
-        <li>푸터 메뉴</li>
-        <li>푸터 메뉴</li>
-        <li>푸터 메뉴</li>
+      <div class="footer-menu">
+      <ul>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+      </ul>
+      <p>@최지현짱지현짱</p>
+      </div>
     </footer>
 </body>
 </html>
