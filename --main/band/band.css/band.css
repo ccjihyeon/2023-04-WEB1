@@ -1,0 +1,47 @@
+.system{
+    width: 100%;
+    height: 68px;
+    background-color: #fff;
+}
+.intro-rogo{
+    width: 78px;
+    height: 29px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-image: url(../band.img/spr_intro.png);
+    background-position: 0 -98px;
+    margin: 17px 0 0 17px;
+}
+.intro-rogo>a{
+    width: 78px;
+    height: 32px;
+    transform: rotateY(10px);
+    color: transparent;
+}
+.intro-rogo>a>p{
+    color: transparent;
+}
+.intro-text{
+    display: flex;
+    justify-content: right;
+}
+.intro-text>a{
+    text-decoration:none;
+    padding: 3px;
+    position: relative;
+    margin-left: 30px;
+    transform: translateY(-24px);
+    color: #222;
+    font-size: 14px;
+}
+.korea>button{
+    background-color: #fff;
+    border: 1px solid ;
+}
+.intro-rogin{
+    border-radius: 2px;
+    background-color: rgb(113, 219, 113);
+    font-weight: 700;
+}
+
