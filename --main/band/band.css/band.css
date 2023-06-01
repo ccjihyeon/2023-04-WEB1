@@ -1,3 +1,4 @@
+
 .system{
     width: 100%;
     height: 68px;
@@ -150,6 +151,7 @@ h1{
     height: 540px;
     background-image: url(../band.img/bg_intro.jpg);
     background-size: cover;
+    background-position: center;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -166,6 +168,93 @@ h2{
     line-height: 30px;
     font-weight: 500px;
 }
+.main{
+    margin: 0 auto;
+    padding:30px;
+    max-width:1053px;
+    align-content: center;
+    display: flex;
+    justify-content:space-between;
+    text-align: left;
+}
+.meeting>img{
+    width: 300px;
+    height: 160px;
+}
+h3{
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.meeting>p{
+    line-height: 25px;
+    font-size: 15px;
+}
+.function>img{
+    width: 300px;
+    height: 160px;
+}
+.function>p{
+    line-height: 25px;
+    font-size: 15px;
+}
+.want>img{
+    width: 300px;
+    height: 160px;
+}
+.want>p{
+    line-height: 25px;
+    font-size: 15px;
+}
+.main-text{
+    margin: 0 auto;
+    padding: 0px 30px;
+    max-width: 1053px;
+    text-align:end;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.main-text>a{  
+      text-decoration: none;
+      font-size: 14px;
+}
+.main-text>a:hover{
+    text-decoration: underline;
+}
+
+article{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1053px;
+    padding: 30px;
+    display: flex;
+}
+.wrapper-img{
+    width: 93px;
+    height: 93px;
+    border-radius: 12px;
+} 
+
+.main-wrapper>ul>li>a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+h4{
+    font-weight: bold;
+    font-size: 14px;
+}
+.wrapper-text{
+    width: 100%;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 10px;
+ 
+}
+
+
 
 
 
