@@ -1,7 +1,7 @@
 .system{
     width: 100%;
     height: 68px;
-    background-color: #fff;
+    background-color:  #f6f8fa;
 }
 .intro-rogo{
     width: 78px;
@@ -34,17 +34,37 @@
     font-size: 14px;
 }
 .korea{
-    background-color: #fff;
     border: 1px solid transparent;
     text-decoration: none;
     font-size: 14px;
+    cursor: pointer;
 }
 .korea:hover{
     text-decoration: underline;
 }
-.language-ul{
+
+#menu-check {
     display: none;
 }
+.language-ul{
+    display: none;
+    position: absolute;
+    border: 1px solid #c0c0c0;
+    background-color: white;
+    top: 32px;
+    width: 150px;
+    font-size: 14px;
+    padding: 4px;
+}
+
+#menu-check:checked + .language-ul {
+    display: block;
+}
+.languageLink{
+    text-decoration: none;  
+    line-height: 24px;
+}
+
 .intro-rogin{ 
     font-size: 10px;
     font-weight: 700;
@@ -128,7 +148,7 @@ h1{
 .banner-main{
     width: 100%;
     height: 540px;
-    background-image: url(/--main/band/band.img/bg_intro.jpg);
+    background-image: url(../band.img/bg_intro.jpg);
     background-size: cover;
     text-align: center;
     display: flex;
